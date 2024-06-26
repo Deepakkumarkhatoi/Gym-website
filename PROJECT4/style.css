@@ -1,0 +1,457 @@
+:root {
+  --primary-color: #111317;
+  --primary-color-light: #1f2125;
+  --primary-color-extra-light: #35373b;
+  --secondary-color: #45ffca;
+  --secondary-color-dark: #45ffca;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 5px 5%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 60px;
+
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.name {
+  color: #45ffca;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #45ffca;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+
+
+
+.happy {
+  height: 60px;
+  width: 140px;
+
+}
+
+.logo {
+  background-image: url(logo-footer.png);
+  background-size: cover;
+  height: 60px;
+  width: 140px;
+}
+
+
+
+
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 5%;
+  height: 2rem;
+  width: 100%;
+  bottom: 0;
+}
+
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+
+
+}
+
+form label,
+form input,
+form button {
+  margin-bottom: 10px;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+
+  outline: none;
+
+}
+
+form button {
+  background: #45ffca;
+  color: #0d0d0d;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  height: 33px;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1.3rem;
+}
+
+#registerform {
+  background-image: url(workout6.jpg);
+  background-size: cover;
+}
+
+.section {
+  height: 90vh;
+}
+
+.tead {
+  text-align: center;
+  color: #45ffca;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+}
+
+form input {
+  height: 1.6rem;
+}
+
+
+
+
+
+
+.price__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.price__card {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-light);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.3s;
+  height: 500px;
+}
+
+.price__card:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.price_card_content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.price__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.price__card h3 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+}
+
+.price__card p {
+  margin-bottom: 0.75rem;
+  color: var(--white);
+}
+
+.price__card p i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+.price__btn {
+  color: var(--secondary-color);
+  background-color: transparent;
+  border: 2px solid var(--secondary-color);
+  border-radius: 2rem;
+  height: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.price__btn:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+.section__subheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.hmm {
+  margin-top: 1rem;
+}
+
+
+
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #45ffca;
+}
+
+.home-content h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #45ffca;
+
+}
+
+.home-img img {
+  width: 126vh;
+}
+
+.home-img::before {
+  content: 'FITNESS';
+  position: absolute;
+  top: 10%;
+  left: 26%;
+  transform: translateX(-50%);
+  font-size: 10rem;
+  font-weight: 400;
+  line-height: 20rem;
+  color: white;
+  opacity: 0.1;
+  z-index: -1.2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  background-color: #45ffca;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  margin-top: 1rem;
+  letter-spacing: 0.01rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.schedule th,
+.schedule td {
+  padding: 17px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.schedule th {
+  background-color: #45ffca;
+  color: rgb(0, 0, 0);
+}
+
+#timing {
+  background-image: url(banner.jpg);
+
+}
+
+#timing h2 {
+  font-size: 2.3rem;
+}
+
+
+
+
+
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.box {
+  border: 2px solid transparent;
+  height: 420px;
+  width: 28%;
+  background-color: var(--primary-color-light);
+  padding: 20px 23px;
+  margin-top: 6px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.box:hover {
+  background-color: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.box-img1 {
+  background-image: url(img/1908-5-reasons-gym-clothing-blog-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  height: 260px;
+
+}
+
+.box-img2 {
+  background-image: url(img/40kg-gym-kit3ft-straight-rod-3ft-curl-rod-one-pair-dumbbell-rods-original-imagees7zqjka7f7.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  height: 260px;
+
+}
+
+.box-img3 {
+  background-image: url(img/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  height: 260px;
+
+}
+
+.bottom p {
+  margin-top: 20px;
+  color: var(--secondary-color-dark);
+  cursor: pointer;
+}
+
+.bottom h2 {
+  color: #45ffca;
+}
+
+#gears {
+  background-image: url();
+  background-size: cover;
+}
+
+.section1 .contentt .roww {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.section1 .contentt .roww .colss {
+  position: relative;
+  width: 600px;
+  padding: 20px 50px;
+
+}
+
+.section1 .contentt .roww .colss .headingg {
+  font-size: 2em;
+  color: #45ffca;
+}
+
+.section1 .contentt .roww .colss .boxess {
+  position: relative;
+  width: 400px;
+  height: 260px;
+  padding: 18px;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  background: var(--primary-color-light);
+}
+
+.section1 .contentt .roww .colss .boxess:hover {
+  background: var(--primary-color-extra-light);
+  border-color: var(--secondary-color);
+}
+
+.section1 .contentt .roww .colss .boxess img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
